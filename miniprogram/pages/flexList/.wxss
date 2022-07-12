@@ -1,0 +1,6 @@
+
+.flex-list view {
+  width:50px;
+  height:50px;
+  /* background:red; */
+}

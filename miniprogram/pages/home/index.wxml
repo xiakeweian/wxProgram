@@ -1,0 +1,15 @@
+<!--pages/home/index.wxml-->
+
+<view class='mt-list'>
+  <navigator wx:for="{{dataList}}" wx:key='id' class='mt-item' url="/pages/{{item.navigate}}/index?id={{item.id}}&name={{item.title}}" open-type="navigate">
+    <image src="../../images/mt-icon/{{item.id}}.png" class='mt-item-img' mode='widthFix'></image>
+    <view class='mt-item-title'>{{item.title}}</view>
+  </navigator>
+</view>
+<view class='card-list'>
+  <view wx:for="{{cardList}}" wx:key='id' class='card-item'>
+  <image src="../../images/mt-icon/list{{item.id}}.png"></image>
+  <text class='card-item-desc'>{{item.description}}</text>
+  <text class='card-item-money'>¥{{item.sale}}</text>
+  </view>
+</view>

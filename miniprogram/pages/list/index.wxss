@@ -1,0 +1,66 @@
+/* pages/flexList/index.wxss */
+
+.container1 .flex-list {
+  display:flex;
+  justify-content: space-around;
+}
+.container1 .flex-list view {
+  width:100px;
+  height:100px;
+  text-align:center;
+  line-height:100px;
+}
+.container1 .flex-list view:nth-child(1) {
+  background-color:lightgreen;
+}
+.container1 .flex-list view:nth-child(2) {
+  background-color:lightblue;
+}
+.container1 .flex-list view:nth-child(3) {
+  background-color:lightcoral;
+}
+.container1 .scroll-view {
+  height:100px;
+  overflow:hidden;
+  margin-top:20px;
+}
+.container1 .scroll-view view {
+  width:100px;
+  height:100px;
+  line-height:100px;
+  text-align: center;
+}
+.container1 .scroll-view view:nth-child(n) {
+  background-color: antiquewhite;
+}
+.container1 .scroll-view view:nth-child(2n) {
+  background-color: rgb(9, 192, 64);
+}
+.container1 .scroll-view view:nth-child(3n) {
+  background-color: rgb(187, 23, 86);
+}
+.swiper-list {
+  height:150px;
+
+}
+.swiper-list .item {
+  width:100%;
+  height:100px;
+  line-height:150px;
+  text-align: center;
+}
+swiper-item:nth-child(1) {
+  background-color: rgb(8, 150, 233);
+}
+swiper-item:nth-child(2) {
+  background-color: rgb(9, 192, 64);
+}
+swiper-item:nth-child(3) {
+  background-color: rgb(187, 23, 86);
+}
+.count-text {
+  text-align: center;
+}
+.input {
+  border:2px solid #eee;
+}

@@ -1,0 +1,69 @@
+<view class='container1'>
+  <view class="flex-list">
+    <view>1</view>
+    <view>2</view>
+    <view>3</view>
+  </view>
+  <scroll-view class='scroll-view' scroll-y>
+    <view>A</view>
+    <view>B</view>
+    <view>C</view>
+    <view>D</view>
+    <view>E</view>
+    <view>F</view>
+    <view>G</view>
+    <view>H</view>
+  </scroll-view>
+  <swiper class='swiper-list' indicator-dots indicator-color="white" indicator-active-color="gray" autoplay interval="3000" circular>
+    <swiper-item>
+    <view class='item'>A</view>
+    </swiper-item>
+    <swiper-item>
+    <view class='item'>B</view>
+    </swiper-item>
+    <swiper-item>
+    <view class='item'>C</view>
+    </swiper-item>
+  </swiper>
+  <view class='text-test'>
+  <text use-select>手机号：15039583929</text>
+  <rich-text nodes="<h1 style='color:red;'>标题</h1>"></rich-text>
+  </view>
+  <view>
+  <button>普通按钮</button>
+  <button type='primary'>主色调按钮</button>
+  <button type='warn'>警告按钮</button>
+  <button type='warn' size='mini'>小号按钮</button>
+  <button type='warn' size='mini' plain>镂空按钮</button>
+  </view>
+  <view>
+  <image src='/images/kt.jpg' mode='scaleToFill'></image>
+  </view>   
+  <view>{{info}}</view>
+  <image src='{{imgUrl}}' mode='scaleToFill'></image>
+  <view>{{randomNum1 >= 5 ? '数字大于或等于5':"数字小于5"}}</view>
+  <view>{{randomNum2 * 100}}</view>
+  <view class='count-text'> <text>{{count}}</text></view>
+
+  <button bindtap='tabIncrmentHandler' type='primary'>按钮+</button>
+  <button bindtap='tabDecrmentHandler' type='primary'>按钮-</button>
+  <button bindtap='tabIncrment2Handler' type='primary' data-info="{{2}}">按钮+2</button>
+  <h3>input框</h3> 
+  <input type="text" bindinput="bindInputHandler" class='input'/>
+  <view>
+  <view wx:if="{{type===1}}">男</view>
+  <view wx:elif="{{type===2}}">女</view>
+  <view wx:else>未知</view>
+  </view>
+  <h3>～～～block包裹标签的使用～～～</h3>
+  <block wx:if="{{true}}">
+  <view>1</view>
+  <view>2</view>
+  </block>
+  <h3>～～～hidden控制元素的显示和隐藏～～～</h3> 
+  <text>此时的condition值是：{{condition}}</text>
+  <view hidden="{{condition}}">条件为true隐藏，条件为false显示</view>
+
+  <h3>～～～～～循环列表～～～～～</h3>
+  <view wx:for="{{dataList}}" wx:key='id'>我喜欢的水果{{item.name}}</view>
+</view>

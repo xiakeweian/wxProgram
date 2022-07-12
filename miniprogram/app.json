@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/index/index",
+    "pages/list/index",
+    "pages/waimai/index",
+    "pages/meishi/index",
+    "pages/hotel/index",
+    "pages/recreation/index",
+    "pages/movie/index",
+    "pages/drink/index",
+    "pages/buyVegetable/index",
+    "pages/supermarket/index",
+    "pages/buyMedicine/index",
+    "pages/medicalDental/index",
+    "pages/getOpenId/index",
+    "pages/getMiniProgramCode/index",
+    "pages/deployService/index",
+    "pages/createCollection/index",
+    "pages/uploadFile/index",
+    "pages/selectRecord/index",
+    "pages/updateRecord/index",
+    "pages/updateRecordResult/index",
+    "pages/updateRecordSuccess/index",
+    "pages/sumRecord/index",
+    "pages/sumRecordResult/index"
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F0CE30",
+    "navigationBarTitleText": "美团",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 0
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/home/index",
+        "text":"home"
+      },
+      {
+        "pagePath":"pages/index/index",
+        "text":"index"
+      },
+      {
+        "pagePath":"pages/list/index",
+        "text":"list"
+      }
+      
+    ]
+  }
+}
