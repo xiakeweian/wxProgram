@@ -1,0 +1,17 @@
+<!--pages/shop/index.wxml-->
+<view class='shop-list'>
+<view wx:for="{{shopList}}" wx:key='id' class='shop-item'>
+<view class='thumb'>
+  <image src="{{item.images[0]}}" ></image>
+</view>
+
+<view class='shop-item-desc'>
+<text class='name'>{{item.name}}</text>
+<text>电话：{{item.phone}}</text>
+<text>地址：{{item.address}}</text>
+<text>支持：{{item.supportService}}</text>
+<!-- <text>评分：{{item.score}}</text> -->
+<text>营业时间：{{item.businessHours}}</text>
+</view>
+</view>
+</view>

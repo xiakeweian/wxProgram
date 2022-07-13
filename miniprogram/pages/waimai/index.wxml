@@ -1,2 +1,2 @@
 <!--pages/waimai/index.wxml-->
-<text>外卖页面开发中...</text>
+<text>{{query.name}}</text>

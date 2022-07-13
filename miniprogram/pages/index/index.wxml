@@ -1,13 +1,15 @@
-
 <swiper class='swiper-list' indicator-dots autoplay interval="3000" circular indicator-active-color="#F0CE30">
-<swiper-item wx:for="{{swiperList}}" wx:key='id' class="swiper-item">
-<image src="{{item.image}}" mode='widthFix'></image>
-</swiper-item>
+  <swiper-item wx:for="{{swiperList}}" wx:key='id' class="swiper-item">
+    <image src="{{item.image}}" mode='widthFix'></image>
+  </swiper-item>
 </swiper>
 <view class='grid-list'>
-    <view class='grid-item' wx:for="{{gridList}}" wx:key='id' bindtap="clickHandler">
+  <navigator class='grid-item' wx:for="{{gridList}}" wx:key='id' url="/pages/shop/index?name={{item.name}}&id={{item.id}}">
     <image src="{{item.icon}}"></image>
     <text>{{item.name}}</text>
-    </view>
+  </navigator>
+  <!-- <view class='grid-item' wx:for="{{gridList}}" wx:key='id' bindtap="clickHandler" data-info="{{item}}" data-id="{{item.id}}" data-name="{{item.name}}" data-desc="2">
+    <image src="{{item.icon}}"></image>
+    <text>{{item.name}}</text>
+  </view> -->
 </view>
-

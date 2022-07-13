@@ -1,0 +1,30 @@
+/* pages/shop/index.wxss */
+
+.shop-list {
+  margin:32rpx;
+}
+.shop-item {
+display:flex;
+/* justify-content: space-around; */
+/* padding:20rpx; */
+box-shadow: 4rpx 8rpx 0rpx 5rpx #efefef;
+
+}
+.thumb image {
+  width:250rpx;
+  height:250rpx;
+}
+.shop-item .shop-item-desc {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font-size:24rpx;
+  margin-left:30rpx;
+}
+
+.shop-item .shop-item-desc .name {
+  font-weight: bold;
+  font-size:28rpx;
+  line-height:56rpx;
+}

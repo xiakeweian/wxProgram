@@ -35,22 +35,21 @@
 }
 .card-list .card-item {
   width:50%;
-  /* height:300rpx; */
+  height:300rpx;
   padding:8rpx;
   box-sizing: border-box;
   display:flex;
   flex-direction: column;
 }
 .card-list .card-item image {
-  height:250rpx;
+  height:200rpx;
   width:100%;
   border-radius: 4rpx;
 }
 .card-item-desc {
-  
   overflow: hidden;
   -webkit-line-clamp: 2;
  text-overflow: ellipsis;
  display: -webkit-box;
- -webkit-box-orient: vertical;
+-webkit-box-orient: vertical;
 }

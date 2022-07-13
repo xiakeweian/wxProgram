@@ -5,22 +5,27 @@ Page({
    * 页面的初始数据
    */
   data: {
-    query:{}
+    query: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    console.log(options,'kkkoptions')
-
+    console.log(options, 'kkkoptions')
+    this.setData({
+      query: options
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady() {
-
+  onReady(s) {
+    console.log(s, this.data.query, 'ssss')
+    wx.setNavigationBarTitle({
+      title: this.data.query.name
+    })
   },
 
   /**
