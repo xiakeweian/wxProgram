@@ -1,0 +1,5 @@
+/* components/test2/test2.wxss */
+
+.test2 {
+  margin-top:40rpx;
+}

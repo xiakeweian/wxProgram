@@ -4,8 +4,27 @@
     "pages/index/index",
     "pages/list/index",
     "pages/waimai/index",
-    "pages/shop/index"
-   
+    "pages/shop/index",
+    "pages/test/index"
+  ],
+  "preloadRule":{
+    "pages/home/index":{
+      "network":"all",
+      "packages":["pkgA"]
+    }
+  },
+  "subpackages": [
+    {
+      "root":"pkgA",
+      "name":"p1",
+      "pages":["pages/dog/index","pages/cat/index"]
+    },
+    {
+      "root":"pkgB",
+      "name":"p2",
+      "pages":["pages/apple/index","pages/banana/index"],
+      "independent":true
+    }
   ],
   "window": {
     "backgroundColor": "#ffffff",
@@ -16,9 +35,8 @@
     "enablePullDownRefresh": true,
     "onReachBottomDistance": 0
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2",
   "tabBar":{
+    "custom":true,
     "list":[
       {
         "pagePath":"pages/home/index",
@@ -31,8 +49,22 @@
       {
         "pagePath":"pages/list/index",
         "text":"list"
+      },
+      {
+        "pagePath":"pages/test/index",
+        "text":"test"
       }
       
     ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-image": "@vant/weapp/image/index",
+    "my-test1":"/components/test1/test1",
+    "my-test2":"/components/test2/test2",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
   }
 }
